@@ -12,7 +12,7 @@
 			"default": "./dist/index.js"
 		}
 	},
-	"files": ["dist/"],
+	"files": ["dist/", "!dist/*.test.*"],
 	"devDependencies": {
 		"@biomejs/biome": "1.7.3",
 		"@dominikrusso/tsconfig": "0.3.2",
