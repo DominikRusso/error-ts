@@ -6,6 +6,12 @@
 	"author": "Dominik Russo",
 	"description": "No more exceptions.",
 	"keywords": ["result", "error", "exception"],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		}
+	},
 	"files": ["dist/"],
 	"devDependencies": {
 		"@biomejs/biome": "1.7.3",
