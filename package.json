@@ -1,0 +1,30 @@
+{
+	"name": "@dominikrusso/error",
+	"version": "0.0.0",
+	"type": "module",
+	"license": "MIT",
+	"author": "Dominik Russo",
+	"description": "No more exceptions.",
+	"keywords": ["result", "error", "exception"],
+	"files": ["dist/"],
+	"devDependencies": {
+		"@biomejs/biome": "1.7.3",
+		"@dominikrusso/tsconfig": "0.3.2",
+		"typescript": "5.4.5",
+		"vitest": "1.6.0",
+		"@vitest/coverage-v8": "1.6.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dominikrusso/error-ts.git"
+	},
+	"bugs": {
+		"url": "https://github.com/dominikrusso/error-ts/issues"
+	},
+	"scripts": {
+		"build": "tsc",
+		"fmt": "biome format --write *.json *.ts ./src",
+		"lint": "biome lint ./src",
+		"test": "vitest run --coverage"
+	}
+}
