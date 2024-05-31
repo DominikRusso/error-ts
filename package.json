@@ -15,7 +15,7 @@
 	"files": ["dist/", "!dist/*.test.*"],
 	"devDependencies": {
 		"@biomejs/biome": "1.7.3",
-		"@dominikrusso/tsconfig": "0.3.2",
+		"@dominikrusso/tsconfig": "1.0.0",
 		"typescript": "5.4.5",
 		"vitest": "1.6.0",
 		"@vitest/coverage-v8": "1.6.0"

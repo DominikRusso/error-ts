@@ -12,8 +12,8 @@ importers:
         specifier: 1.7.3
         version: 1.7.3
       '@dominikrusso/tsconfig':
-        specifier: 0.3.2
-        version: 0.3.2(typescript@5.4.5)
+        specifier: 1.0.0
+        version: 1.0.0(typescript@5.4.5)
       '@vitest/coverage-v8':
         specifier: 1.6.0
         version: 1.6.0(vitest@1.6.0)
@@ -103,8 +103,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@dominikrusso/tsconfig@0.3.2':
-    resolution: {integrity: sha512-LFTJYTydQv38UBBoglL+gvDjYBLNN3MZg6xXr8F+xxTmqIqjWg9pxDhHU1F/93UO6ynHVrevcjMx2k/w4NcA0Q==}
+  '@dominikrusso/tsconfig@1.0.0':
+    resolution: {integrity: sha512-0MfwQ9M32hpuErFXl/U3Qlkf5BCxId+f4hvgGV1L+Gm65CvUHIRM9HvKfzpw3I1QpwPYTdgIZ9DpyWl1W1gp3Q==}
     engines: {pnpm: '>=9.0.0'}
     peerDependencies:
       typescript: ^5.4.0
@@ -811,7 +811,7 @@ snapshots:
   '@biomejs/cli-win32-x64@1.7.3':
     optional: true
 
-  '@dominikrusso/tsconfig@0.3.2(typescript@5.4.5)':
+  '@dominikrusso/tsconfig@1.0.0(typescript@5.4.5)':
     dependencies:
       typescript: 5.4.5
 
