@@ -14,8 +14,7 @@ export function isError<Ok>(result: Ok | Error): result is Error {
  */
 export function sTry<Ok>(fn: () => Ok): Ok | Error {
 	try {
-		const ok = fn();
-		return ok;
+		return fn();
 	} catch (error) {
 		if (isError(error)) {
 			return error;
