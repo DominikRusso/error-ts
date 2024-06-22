@@ -36,7 +36,7 @@ describe("sTry", () => {
 
 		expect(isError(result)).toBe(true);
 		if (!isError(result)) {
-			// explicity narrowing
+			// explicit narrowing
 			throw "unreachable";
 		}
 		expect(result.cause).toEqual("a string");
@@ -68,7 +68,7 @@ describe("aTry", () => {
 
 		expect(isError(result)).toBe(true);
 		if (!isError(result)) {
-			// explicity narrowing
+			// explicit narrowing
 			throw "unreachable";
 		}
 		expect(result.cause).toEqual("a string");
@@ -82,7 +82,7 @@ describe("aTry", () => {
 
 		expect(isError(result)).toBe(true);
 		if (!isError(result)) {
-			// explicity narrowing
+			// explicit narrowing
 			throw "unreachable";
 		}
 		expect(result.cause).toEqual("rejection");
