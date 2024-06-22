@@ -1,7 +1,4 @@
 {
 	"extends": "@dominikrusso/tsconfig/tsc-node-lib.json",
-	"include": ["src/*.ts"],
-	"compilerOptions": {
-		"outDir": "./dist"
-	}
+	"include": ["src/*.ts"]
 }
