@@ -6,7 +6,6 @@ export default defineConfig({
 		coverage: {
 			include: ["src/**"],
 			exclude: ["**/index.ts"],
-			ignoreEmptyLines: true,
 			thresholds: {
 				100: true,
 			},
