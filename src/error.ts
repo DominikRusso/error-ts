@@ -10,6 +10,10 @@ export function isError<Ok>(result: Ok | Error): result is Error {
  * {@linkcode sTry} wraps a function that might throw an exception into
  * a function that returns an Error.
  *
+ * - If the function throws an Error, it is returned directly.
+ * - If the function throws a non-Error value,
+ *   it is encapsulated in a new Error's `cause` field.
+ *
  * Its async counterpart is {@linkcode aTry}.
  */
 export function sTry<Ok>(fn: () => Ok): Ok | Error {
@@ -26,6 +30,10 @@ export function sTry<Ok>(fn: () => Ok): Ok | Error {
 /**
  * {@linkcode aTry} wraps an async function that might throw an exception into
  * a function that returns an Error.
+ *
+ * - If the function throws an Error, it is returned directly.
+ * - If the function throws a non-Error value,
+ *   it is encapsulated in a new Error's `cause` field.
  *
  * Its non-async counterpart is {@linkcode sTry}.
  */
