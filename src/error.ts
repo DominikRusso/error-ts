@@ -23,7 +23,7 @@ export function sTry<Ok>(fn: () => Ok): Ok | Error {
 		if (isError(error)) {
 			return error;
 		}
-		return Error("error", { cause: error });
+		return Error("caught non-Error", { cause: error });
 	}
 }
 
@@ -44,6 +44,6 @@ export async function aTry<Ok>(fn: () => Promise<Ok>): Promise<Ok | Error> {
 		if (isError(error)) {
 			return error;
 		}
-		return Error("error", { cause: error });
+		return Error("caught non-Error", { cause: error });
 	}
 }

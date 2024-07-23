@@ -39,6 +39,7 @@ describe("sTry", () => {
 			// explicit narrowing
 			throw "unreachable";
 		}
+		expect(result).toEqual(Error("caught non-Error"));
 		expect(result.cause).toEqual("a string");
 	});
 });
@@ -71,6 +72,7 @@ describe("aTry", () => {
 			// explicit narrowing
 			throw "unreachable";
 		}
+		expect(result).toEqual(Error("caught non-Error"));
 		expect(result.cause).toEqual("a string");
 	});
 
@@ -85,6 +87,7 @@ describe("aTry", () => {
 			// explicit narrowing
 			throw "unreachable";
 		}
+		expect(result).toEqual(Error("caught non-Error"));
 		expect(result.cause).toEqual("rejection");
 	});
 });
